@@ -26,6 +26,7 @@ export function Menu() {
     dark: <SunIcon />,
     light: <MoonIcon />
   };
+
   return (
     <nav className={styles.menu}>
       <a className={styles.menuLink} href='#' aria-label='Ir para a Home'
