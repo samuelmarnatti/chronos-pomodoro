@@ -5,6 +5,7 @@ import { DefaultButton } from '../DefaultButton';
 export function MainForm() {
   return (
     <form className='form' action=''>
+      <button type="button">Iniciar</button>
       <div className='formRow'>
         <DefaultInput labelText='task' id='meuInput' type='text' />
       </div>

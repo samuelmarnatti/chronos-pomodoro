@@ -1,13 +1,14 @@
-import '../../styles/theme.css';
-import '../../styles/global.css';
-import { Container } from '../../components/Conteiner';
+
+import { Container } from '../../components/Container';
+import { Footer } from '../../components/Footer';
 import { Logo } from '../../components/Logo';
 import { Menu } from '../../components/Menu';
-import { CountDown } from '../../components/CountDown';
-import { MainForm } from '../../components/MainForm';
-import { Footer } from '../../components/Footer';
 
-export function MainTemplate() {
+type MainTemplateProps = {
+  children: React.ReactNode;
+};
+
+export function MainTemplate({ children }: MainTemplateProps) {
   return (
     <>
       <Container>
@@ -16,16 +17,12 @@ export function MainTemplate() {
       <Container>
         <Menu />
       </Container>
-      <Container>
-        <CountDown />
-      </Container>
-      <Container>
-        <MainForm />
-      </Container>
+
+      {children}
+
       <Container>
         <Footer />
       </Container>
     </>
   );
 }
-
