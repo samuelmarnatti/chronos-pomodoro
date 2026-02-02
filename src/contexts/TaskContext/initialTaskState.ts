@@ -1,4 +1,5 @@
 import { TaskStateModel } from '../../models/TaskStateModel';
+
 export const initialTaskState: TaskStateModel = {
   tasks: [],
   secondsRemaining: 0,
@@ -10,5 +11,4 @@ export const initialTaskState: TaskStateModel = {
     shortBreakTime: 5,
     longBreakTime: 15,
   },
-
 };
